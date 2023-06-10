@@ -18,7 +18,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Mengambil kode dari repository
-                clone("stagging","https://github.com/Mdzikri/tubes-cilsy/tree/stagging.git"," ")
+                clone("stagging","https://github.com/Mdzikri/tubes-cilsy/tree/stagging.git","github_cred")
             }
         }
         
