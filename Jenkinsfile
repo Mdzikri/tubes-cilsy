@@ -25,7 +25,7 @@ pipeline {
         stage('Build image') {
             steps {
                 // Menjalankan proses build
-                sh "docker build -t ${params.name}:${params.version} backend/"
+                sh "sudo docker build -t ${params.name}:${params.version} backend/"
             }
         }
         
