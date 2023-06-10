@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  cobain-fe:
+    environment:
+      REACT_APP_BACKEND_URL: "http://localhost:5000"
+    image: cilist-fe
+    ports:
+      - 3000:3000
